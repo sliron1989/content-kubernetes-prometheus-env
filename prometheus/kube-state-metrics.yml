@@ -8,6 +8,8 @@ metadata:
   annotations:
     prometheus.io/scrape: 'true'
 spec:
+  selector:
+      app: kube-state-metrics
   ports:
   - name: metrics
     port: 8080
