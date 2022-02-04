@@ -12,7 +12,10 @@ spec:
     spec:
       selector:
         matchLabels:
-          app: prometheus-server
+          app: prometheus-server    
+      metadata:
+        labels:
+          app: prometheus-server    
       containers:
         - name: prometheus
           image: prom/prometheus:v2.2.1
