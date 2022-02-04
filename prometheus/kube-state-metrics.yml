@@ -25,7 +25,7 @@ metadata:
   namespace: monitoring
 spec:
   replicas: 1
-  labels:
+  selector:
     matchLabels:
       app: kube-state-metrics 
   template:
