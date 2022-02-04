@@ -33,10 +33,11 @@ spec:
       name: kube-state-metrics-main
       labels:
         app: kube-state-metrics
-  spec:
-    containers:
-      - name: kube-state-metrics
-        image: quay.io/coreos/kube-state-metrics:latest
-        ports:
-        - containerPort: 8080
-          name: metrics
+    spec:
+      containers:
+        - name: kube-state-metrics
+          image: quay.io/coreos/kube-state-metrics:latest
+          ports:
+          - containerPort: 8080
+            name: metrics
+        imagePullPolicy: IfNotPresent
