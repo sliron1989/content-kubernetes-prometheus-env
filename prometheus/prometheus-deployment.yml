@@ -13,8 +13,8 @@ spec:
       selector:
         matchLabels:
           app: prometheus-server    
-      metadata:
-        labels:
+      template:
+        metadata:
           app: prometheus-server    
       containers:
         - name: prometheus
