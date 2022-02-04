@@ -23,11 +23,11 @@ kind: Deployment
 metadata:
   name: kube-state-metrics
   namespace: monitoring
-  labels:
-    matchLabels:
-      app: kube-state-metrics
 spec:
   replicas: 1
+  labels:
+    matchLabels:
+      app: kube-state-metrics 
   template:
     metadata:
       name: kube-state-metrics-main
