@@ -10,6 +10,8 @@ spec:
       labels:
         app: prometheus-server
     spec:
+      selector:
+        app: prometheus-server
       containers:
         - name: prometheus
           image: prom/prometheus:v2.2.1
