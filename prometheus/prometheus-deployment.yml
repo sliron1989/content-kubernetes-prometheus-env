@@ -30,7 +30,7 @@ spec:
             - name: prometheus-storage-volume
               mountPath: /prometheus/
         - name: watch
-          image: weaveworks/watch:master-5b2a6e5
+          image: weaveworks/watch:latest
           imagePullPolicy: IfNotPresent
           args: ["-v", "-t", "-p=/etc/prometheus", "-p=/var/prometheus", "curl", "-X", "POST", "--fail", "-o", "-", "-sS", "http://localhost:9090/-/reload"]
           volumeMounts:
