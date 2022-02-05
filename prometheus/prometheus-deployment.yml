@@ -36,8 +36,6 @@ spec:
           volumeMounts:
             - name: prometheus-config-volume
               mountPath: /etc/prometheus
-        imagePullPolicy: IfNotPresent
-
       volumes:
         - name: prometheus-config-volume
           configMap:
