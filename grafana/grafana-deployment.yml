@@ -9,6 +9,9 @@ metadata:
 spec:
   replicas: 1
   template:
+    selector:
+      matchLabels:
+        app: grafana
     metadata:
       labels:
         app: grafana
