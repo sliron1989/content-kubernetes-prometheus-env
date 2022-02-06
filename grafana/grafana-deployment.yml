@@ -18,7 +18,7 @@ spec:
         component: core
     spec:
       containers:
-        - image: grafana/grafana
+        - image: grafana/grafana:7.5.12-ubuntu
           name: grafana
           env:
             - name: GF_SECURITY_ADMIN_PASSWORD
